@@ -5,6 +5,6 @@ files:
     destination: /var/www/
 hooks:
   AfterInstall:
-    - location: npm deploy
+    - location: npm run deploy
       timeout: 300
       runas: admin
