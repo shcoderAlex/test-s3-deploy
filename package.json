@@ -1,0 +1,19 @@
+{
+  "name": "test-s3-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shcoderAlex/test-s3-deploy.git"
+  },
+  "author": "Alex <shcoder.alex@gmail.com> (http://itcrowd.kz)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shcoderAlex/test-s3-deploy/issues"
+  },
+  "homepage": "https://github.com/shcoderAlex/test-s3-deploy#readme"
+}
