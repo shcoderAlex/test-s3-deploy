@@ -1,19 +1,21 @@
 {
   "name": "test-s3-deploy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.9.3",
+    "s3-deploy": "^0.7.3"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shcoderAlex/test-s3-deploy.git"
-  },
-  "author": "Alex <shcoder.alex@gmail.com> (http://itcrowd.kz)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shcoderAlex/test-s3-deploy/issues"
-  },
-  "homepage": "https://github.com/shcoderAlex/test-s3-deploy#readme"
+    "predeploy": "npm i && npm run build",
+    "deploy": "s3-deploy './build/**' --cwd './build/' --region eu-central-1 --bucket mobility-constructor-form",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }

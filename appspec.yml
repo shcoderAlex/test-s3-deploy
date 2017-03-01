@@ -1,14 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html
-    destination: /var/www/html/
+  - source: /
+    destination: /var/www/
 hooks:
-  BeforeInstall:
-    - location: deploy/before_install
-      timeout: 300
-      runas: admin
   AfterInstall:
-    - location: deploy/restart_server
+    - location: npm deploy
       timeout: 300
       runas: admin
